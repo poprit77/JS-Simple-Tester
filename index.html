@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="" en>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="View" content="width=device-width, initial-scale=2" />
+    <meta http-equiv="X-UA-Compatiable" content="ie=edge" />
+    <title>Simple quiz</title>
+
+    <link rel="reset" href="\assests\reset.css" />
+    <link rel="stylesheet" href="\assests\style.css" />
+</head>
+
+<body>
+
+    <div class="score"><a href="highscores.html">View Highscores</a></div>
+
+    <div class="Timer">Time: <span id="time">0</span></div>
+
+    <div class="wrapper">
+        <div id="starter" class="start">
+            <h1>Coding Quiz Challenge</h1>
+            <p>Answer the following questions! Wrong answers will remove 5 seconds from the timer</p>
+            <button id="start">Start Quiz</button>
+        </div>
+
+        <div id="questions" class="hide">
+            <h2 id="question-title"></h2>
+            <div id="Choices" class="" choices></div>
+        </div>
+
+        <div id="end-screen" class="hide">
+            <h2>All done!</h2>
+            <p>Your final scores is <span id="final-score"></span>.</p>
+            <p>
+                Enter initals: <input type="text" id="initals" max="3" />
+                <button id="submit">submit</button>
+            </p>
+        </div>
+
+        <div id="feedback" class="feedback hide"></div>
+    </div>
+
+    <script src="\assests\script.js"></script>
+    <script src="\assests\script.js"></script>
+</body>
+
+</html>
