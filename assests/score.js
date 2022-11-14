@@ -6,7 +6,7 @@ function printHighscores(){
     });
 
 
-    for (car i = 0; i < highscores.length; i += 1) {
+    for (var i = 0; i < highscores.length; i += 1) {
 
         var liTag = document.createElement("Li");
         liTag.textContent = highscores[i].initials + " - " highscores[i].score;
